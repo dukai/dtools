@@ -2,13 +2,6 @@
 
 A personal tool kit for JavaScript.
 
-## Getting Started
-Install the module with: `npm install dtools`
-
-```javascript
-var dtools = require('dtools');
-dtools.awesome(); // "awesome"
-```
 
 ## Documentation
 _(Coming soon)_
