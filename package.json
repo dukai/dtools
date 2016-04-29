@@ -1,0 +1,38 @@
+{
+  "name": "dtools",
+  "description": "A personal tool kit for JavaScript.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dukai/dtools",
+  "author": {
+    "name": "dukai",
+    "email": "dukai86@gmail.com",
+    "url": "http://www.dklogs.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dukai@github.com/dukai/dtools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dukai/dtools/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dukai/dtools/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "tools.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": []
+}
