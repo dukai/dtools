@@ -2,8 +2,10 @@
 
 module.exports = function(grunt) {
 
+  var version = JSON.parse(grunt.file.read('./package.json')).version;
   // Project configuration.
   grunt.initConfig({
+    version: version,
     nodeunit: {
       files: ['test/**/*_test.js'],
     },
@@ -35,12 +37,20 @@ module.exports = function(grunt) {
         tasks: ['jshint:test', 'nodeunit']
       },
     },
+    uglify: {
+      my_target: {
+        files: {
+          './tools-<%=version%>.min.js': ['tools.js']
+        }
+      }
+    }
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);
