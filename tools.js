@@ -104,7 +104,7 @@ define(function(require, exports, module){
     };
     exports.indexOf = indexOf;
 
-    if(typeof document == undefined){
+    if(typeof document !== undefined){
         var eles = {
             div: document.createElement('div'),
             ul: document.createElement('ul'),

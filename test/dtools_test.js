@@ -1,6 +1,6 @@
 'use strict';
 
-var dtools = require('../lib/dtools.js');
+var dtools = require('../tools.js');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
