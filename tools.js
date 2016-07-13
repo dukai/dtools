@@ -5,6 +5,7 @@ if (typeof exports === 'object' && typeof exports.nodeName !== 'string' && typeo
 }
 
 define(function(require, exports, module){
+    "use strict"
     var isPlainObject = function(obj){
         if(!obj.hasOwnProperty('constructor') && typeof obj == 'object' && obj.constructor == Object){
             return true;
